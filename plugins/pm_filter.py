@@ -44,11 +44,12 @@ async def pm_search(client, message):
         await auto_filter(client, message)
     else:
         await message.reply_text("<b><i>ɪ ᴀᴍ ɴᴏᴛ ᴡᴏʀᴋɪɴɢ ʜᴇʀᴇ. ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇꜱ ɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ.</i></b>", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ ", url='https://t.me/JisshuMovieZone')]]))
-        
-    
+
+
+REACTION =  ["🔥", "❤️", "😍", "⚡", "👍", "👎", "❤", "🔥", "🥰", "👏", "😁", "🤔", "🤯", "😱", "🌹", "😢", "🎉", "🤩", "🤮", "✈️", "🙏", "👌", "🕊", "🤡", "❤‍🔥", "🌚", "🌭", "💯", "🤣", "⚡", "🍌", "🏆", "🍾", "💋", "👻", "😈", "👨‍💻", "👀", "🎃", "🙈", "😇", "😨", "🤝", "✍", "🤗", "🫡", "🎅", "🎄", "😘", "💊", "🙊", "😎", "👾", "🤷‍♂", "🤷", "🤷‍♀", "😡"]
 @Client.on_message(filters.group & filters.text & filters.incoming)
-async def group_search(client, message):
-    #await message.react(emoji=random.choice(REACTIONS))
+async def give_filter(client, message):
+    await message.react(emoji=random.choice(REACTION), big=True)
     await mdb.update_top_messages(message.from_user.id, message.text)
     user_id = message.from_user.id if message.from_user else None
     chat_id = message.chat.id
