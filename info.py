@@ -72,7 +72,7 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 START_IMG = (environ.get('START_IMG', 'https://telegra.ph/file/5ed708a888f16dd039358.jpg')).split()
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
-PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/b17fa60a698113e0f7334-2ffa07cd565c8fbba1.jpg')).split()
+PAYPICS = (environ.get('PAYPICS', 'https://t.me/qrlinks0')).split()
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://i.imgur.com/f7rjBLp.jpeg'))
 REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
