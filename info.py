@@ -13,16 +13,16 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '25625749'))
-API_HASH = environ.get('API_HASH', '1b4a47426f1189e4c406057be9735e3b')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '9470694'))
+API_HASH = environ.get('API_HASH', '8f9f93417aec3ccb7d961c39fb65e6c9')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7926553239:AAHti1J00ItBIBin_IFffpUe8SasiTRwo-Q')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6467566398').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/Deep2213k") # ADMIN USERNAME
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7985717432').split()]
+USERNAME = environ.get('USERNAME', "https://t.me/gzharsh") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002427494480'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/Moviesrequst1')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002537474111').split()]
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+yjPreOueV01iNmY1')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002368149367').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://xewena6452:OFhJE1WmM2wG10xs@cluster0.gvum06n.mongodb.net/?retryWrites=true&w=majority")
