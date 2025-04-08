@@ -35,10 +35,10 @@ LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002368149367'))  # set s
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002479259622')) # The movie you upload in it will be deleted from the bot.
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002368149367'))
 auth_channel = environ.get('AUTH_CHANNEL', '-1002585889518')
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002313701799'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002675224240'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1002560036496') # If anyone sends a request message to your bot, you will get it in this channel.
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002686255871')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/fortune_friends_corner') #Support group link ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+CB-YY503o1NjZWJl') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
