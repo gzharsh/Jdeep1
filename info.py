@@ -15,30 +15,30 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '9470694'))
 API_HASH = environ.get('API_HASH', '8f9f93417aec3ccb7d961c39fb65e6c9')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7926553239:AAEAT9OR40dqz-lDhKglLgk-z4wgg8uWjBc')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7985717432').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/gzharsh") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002427494480'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002605901033'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+yjPreOueV01iNmY1')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002368149367').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002585889518').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://xewena6452:OFhJE1WmM2wG10xs@cluster0.gvum06n.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "xewena6452")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://yifig76232:wppFkD9GtDDvAABx@cluster0.p3r44.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "yifig76232")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'My_Tg_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002427494480'))  # set shortner log channel
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002368149367'))  # set shortner log channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002479259622')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002160542554'))
-auth_channel = environ.get('AUTH_CHANNEL', '-1002151783803')
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002216002151'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002290453638') # If anyone sends a request message to your bot, you will get it in this channel.
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002537474111')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Ownersupport') #Support group link ( make sure bot is admin )
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002368149367'))
+auth_channel = environ.get('AUTH_CHANNEL', '-1002585889518')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002313701799'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002560036496') # If anyone sends a request message to your bot, you will get it in this channel.
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002686255871')) # 
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/fortune_friends_corner') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
@@ -47,11 +47,11 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/HOWTO61")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/HOWTO61")
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/HOWTO61")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "ff423978d56824258bfcc2792badb5df28859648")
+SHORTENER_API = environ.get("SHORTENER_API", "511fd50afb86100b228ad01c00b4a391249e1477")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'modijiurl.com')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "ff423978d56824258bfcc2792badb5df28859648")
+SHORTENER_API2 = environ.get("SHORTENER_API2", "511fd50afb86100b228ad01c00b4a391249e1477")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'modijiurl.com')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "ff423978d56824258bfcc2792badb5df28859648")
+SHORTENER_API3 = environ.get("SHORTENER_API3", "511fd50afb86100b228ad01c00b4a391249e1477")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'modijiurl.com')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "75600"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "75900"))
@@ -144,7 +144,7 @@ admin_cmds = [
     "/delreq", "/channel", "/del_file", "/delete",
     "/deletefiles", "/deleteall", 
     "All These Commands Can Be Used Only By Admins.", 
-    "⚡ powered by @Backup625"
+    "⚡ powered by @fortune_friends_corner"
 ]
 
 cmds = [
